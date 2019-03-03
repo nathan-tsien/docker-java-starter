@@ -1,0 +1,9 @@
+server:
+  port: 13364
+  address: 0.0.0.0
+  servlet:
+    context-path: /whoami
+
+spring:
+  application:
+    name: docker-java-starter

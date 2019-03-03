@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  docker-java-starter:
+    image: docker-java-starter
+    build: .
+    ports:
+      - :
