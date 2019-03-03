@@ -4,7 +4,7 @@
 
 ```
 # clone
-$ git clone https://github.com/WinMoney/docker-java-starter.git & $ cd docker-java-starter
+$ git clone https://github.com/WinMoney/docker-java-starter.git & cd docker-java-starter
 
 # package with maven
 $ mvn clean package -DskipTests
