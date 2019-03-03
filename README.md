@@ -1,9 +1,14 @@
 ### the starter springboot project for docker
 
-1. clone project
+1. clone project & package
 
 ```
+# clone
 $ git clone https://github.com/WinMoney/docker-java-starter.git & $ cd docker-java-starter
+
+# package with maven
+$ mvn clean package -DskipTests
+
 ```
 
 2. build image
@@ -37,12 +42,14 @@ ac222a67abd1        docker-java-starter:1.0-snapshot   "/bin/sh -c 'exec ja…" 
 $ docker logs -f docker-starter
 ```
 
-4. save image
+##### save & load image
+
+- save image
 ```
 $ docker image save -o docker-java-starter_1.0-snapshot.tar docker-java-starter:1.0-snapshot
 ```
 
-5. load image
+- load image
 ```
 $ docker load < docker-java-starter_1.0-snapshot.tar
 or
