@@ -2,7 +2,7 @@ server:
   port: 13364
   address: 0.0.0.0
   servlet:
-    context-path: /whoami
+    context-path: /whoami-t
 
 spring:
   application:

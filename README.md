@@ -29,8 +29,8 @@ docker-java-starter   1.0-snapshot        debdec78d957        9 seconds ago     
 
 3. create & run docker container
 ```
-docker-starter : container name
-$ docker run -d -p 13364:13364 --name docker-starter docker-java-starter:1.0-snapshot
+# docker-starter : container name
+$ docker run --restart always -d -p 13364:13364 --name docker-starter docker-java-starter:1.0-snapshot
 
 # check container status
 $ docker ps
@@ -40,7 +40,10 @@ ac222a67abd1        docker-java-starter:1.0-snapshot   "/bin/sh -c 'exec ja…" 
 
 # tail logs
 $ docker logs -f docker-starter
+
 ```
+
+view on your broswer: http://127.0.0.1:13364/whoami/greeting
 
 ##### save & load image
 
